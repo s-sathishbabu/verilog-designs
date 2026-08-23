@@ -1,55 +1,37 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 05.07.2026 20:57:23
-// Design Name: 
-// Module Name: ha_tb
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
+module tb_half_adder;
 
-module half_adder_tb;
+    reg a_tb;
+    reg b_tb;
+    wire sum_tb;
+    wire carry_tb;
 
-reg A, B;
-wire Sum, Carry;
+    // Device Under Test (DUT)
+    half_adder dut (
+        .A(a_tb),
+        .B(b_tb),
+        .Sum(sum_tb),
+        .Carry(carry_tb)
+    );
 
-// Instantiate the Half Adder
-half_adder uut (
-    .A(A),
-    .B(B),
-    .Sum(Sum),
-    .Carry(Carry)
-);
+    // Generate VCD waveform file
+    initial begin
+        $dumpfile("half_adder.vcd");
+        $dumpvars(0, tb_half_adder);
+    end
 
-initial begin
-    $display("A B | Sum Carry");
-    $display("----------------");
+    // Apply test inputs
+    initial begin
+        $monitor("Time=%0t | A=%b B=%b | Sum=%b Carry=%b",
+                 $time, a_tb, b_tb, sum_tb, carry_tb);
 
-    A = 0; B = 0; #10;
-    $display("%b %b |  %b    %b", A, B, Sum, Carry);
+        a_tb = 0; b_tb = 0; #1;
+        a_tb = 0; b_tb = 1; #1;
+        a_tb = 1; b_tb = 0; #1;
+        a_tb = 1; b_tb = 1; #1;
 
-    A = 0; B = 1; #10;
-    $display("%b %b |  %b    %b", A, B, Sum, Carry);
-
-    A = 1; B = 0; #10;
-    $display("%b %b |  %b    %b", A, B, Sum, Carry);
-
-    A = 1; B = 1; #10;
-    $display("%b %b |  %b    %b", A, B, Sum, Carry);
-
-    $finish;
-end
+        $finish;
+    end
 
 endmodule
