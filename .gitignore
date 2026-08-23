@@ -1,0 +1,54 @@
+# Vivado
+.vivado/
+*.jou
+*.log
+*.str
+*.wdb
+*.vds
+*.xpr
+*.runs/
+*.cache/
+*.gen/
+*.hw/
+*.ip_user_files/
+*.sim/
+*.srcs/
+
+# ModelSim / QuestaSim
+work/
+transcript
+*.wlf
+*.mpf
+*.mti
+*.do
+
+# Verilator
+obj_dir/
+*.vcd
+
+# Icarus Verilog
+*.vvp
+
+# Yosys
+*.json
+*.dot
+
+# FPGA generated files
+*.bit
+*.bin
+*.ltx
+*.elf
+*.mcs
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# VS Code
+.vscode/
