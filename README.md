@@ -13,10 +13,6 @@ The repository is organized according to different categories of digital design.
 * **`01_combinational/`**
   Contains combinational logic designs and their corresponding testbenches.
 
-* **`02_sequential/`**
-  Contains sequential logic designs involving clocked and storage elements.
-
-
 Each category is divided into:
 
 * **`verilog/`** – RTL/design source files
@@ -28,19 +24,12 @@ Each category is divided into:
 
 The `01_combinational` directory contains fundamental combinational circuits such as:
 
-* AND Gate
-* OR Gate
-* XOR Gate
-* NOT Gate
 * Half Adder
 * Full Adder
-* 2:1 Multiplexer
-* 2:4 Decoder
 
 These designs help in understanding how digital logic can be described using Verilog HDL.
 
 ---
-
 
 ## 🧪 Testbenches
 
