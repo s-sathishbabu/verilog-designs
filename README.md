@@ -26,6 +26,8 @@ The `01_combinational` directory contains fundamental combinational circuits suc
 
 * Half Adder
 * Full Adder
+* Half Subtractor
+* Full Subtractor
 
 These designs help in understanding how digital logic can be described using Verilog HDL.
 
