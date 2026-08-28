@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module tb_half_adder;
+module half_adder_tb;
 
     reg a_tb;
     reg b_tb;

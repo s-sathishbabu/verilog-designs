@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
 
-module tb_half_subtractor;
+module half_subtractor_tb;
 
     reg a,b;
     wire diff,borrow;
