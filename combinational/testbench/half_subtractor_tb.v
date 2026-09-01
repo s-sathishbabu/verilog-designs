@@ -9,7 +9,7 @@ module half_subtractor_tb;
 
     initial begin
         $dumpfile("half_subtractor.vcd");
-        $dumpvars(0,tb_half_subtractor);
+        $dumpvars(0,half_subtractor_tb);
     end
 
     initial begin

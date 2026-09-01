@@ -11,7 +11,7 @@ module mux_4x1_tb;
 
   initial begin
     $dumpfile("mux_4x1.vcd");
-    $dumpvars(0,tb_mux_4x1);
+    $dumpvars(0,mux_4x1_tb);
   end
 
   initial begin

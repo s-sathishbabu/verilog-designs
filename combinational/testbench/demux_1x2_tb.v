@@ -10,7 +10,7 @@ module demux_1x2_tb;
    
    initial begin
      $dumpfile("demux_1x2.vcd");
-     $dumpvars(0,tb_demux_1x2);
+     $dumpvars(0,demux_1x2_tb);
    end
    
    initial begin

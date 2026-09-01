@@ -12,7 +12,7 @@ module mux_2x1_tb;
    
    initial begin
       $dumpfile("mux_2x1.vcd");
-      $dumpvars(0,tb_mux_2x1);
+      $dumpvars(0,mux_2x1_tb);
    end
    initial begin
       {s_tb,i_tb}=0;

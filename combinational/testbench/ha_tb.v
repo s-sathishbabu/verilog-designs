@@ -18,7 +18,7 @@ module half_adder_tb;
     // Generate VCD waveform file
     initial begin
         $dumpfile("half_adder.vcd");
-        $dumpvars(0, tb_half_adder);
+        $dumpvars(0,half_adder_tb);
     end
 
     // Apply test inputs
