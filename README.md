@@ -33,6 +33,7 @@ The `01_combinational` directory contains fundamental combinational circuits suc
 * Demux 1x2
 * Demux 1x4
 * encoder 4x2
+* decoder 2x4
 
 
 These designs help in understanding how digital logic can be described using Verilog HDL.
