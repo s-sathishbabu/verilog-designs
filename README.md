@@ -37,6 +37,8 @@ The `01_combinational` directory contains fundamental combinational circuits suc
 * priority_encoder_4x2
 * ripple_carry_adder
 * bcd_adder
+* SR_latch
+
 These designs help in understanding how digital logic can be described using Verilog HDL.
 
 ---
