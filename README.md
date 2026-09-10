@@ -39,7 +39,7 @@ The `01_combinational` directory contains fundamental combinational circuits suc
 * bcd_adder
 * SR_latch
 * SR_flipflop
-
+* D_latch
 These designs help in understanding how digital logic can be described using Verilog HDL.
 
 ---
