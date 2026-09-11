@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 
 
-module tb_jk_latch;
+module jk_latch_tb;
     reg rst,enb,j,k;
     wire q,qbar;
     integer i;
@@ -11,7 +11,7 @@ module tb_jk_latch;
     initial
         begin
             $dumpfile("jk_latch.vcd");
-            $dumpvars(0,tb_jk_latch);
+            $dumpvars(0,jk_latch_tb);
         end
     
     initial
