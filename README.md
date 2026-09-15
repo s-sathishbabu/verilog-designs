@@ -45,6 +45,7 @@ The `01_combinational` directory contains fundamental combinational circuits suc
 * T_flipflop
 * SISO
 * SIPO
+* PISO
 
 
 
