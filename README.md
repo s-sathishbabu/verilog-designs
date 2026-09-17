@@ -47,7 +47,7 @@ The `01_combinational` directory contains fundamental combinational circuits suc
 * SIPO
 * PISO
 * PIPO
-
+* Universal Shift Register
 
 
 These designs help in understanding how digital logic can be described using Verilog HDL.
